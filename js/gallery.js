@@ -4,11 +4,11 @@ gsap.registerPlugin(ScrollTrigger);
 // Gallery Controller Class
 class GalleryController {
     constructor() {
-        this.preloader = document.querySelector('.preloader');
+        this.preloader = document.querySelector('.avant-preloader');
         this.heroVideo = document.querySelector('#heroVideo');
         this.titleLines = document.querySelectorAll('.title-line');
-        this.filterBtns = document.querySelectorAll('.filter-btn');
-        this.galleryItems = document.querySelectorAll('.gallery-item');
+        this.filterBtns = document.querySelectorAll('.avant-filter-btn');
+        this.galleryItems = document.querySelectorAll('.avant-item');
         
         this.init();
     }
@@ -36,9 +36,7 @@ class GalleryController {
                     duration: 1,
                     ease: 'power2.inOut',
                     onComplete: () => {
-                        if (this.preloader) {
-                            this.preloader.style.display = 'none';
-                        }
+                        this.preloader.style.display = 'none';
                         this.animateHero();
                     }
                 });
@@ -111,7 +109,7 @@ class GalleryController {
     initMediaLoading() {
         const options = {
             root: null,
-            rootMargin: '50px',
+            rootMargin: '100px',
             threshold: 0.1
         };
         
@@ -120,7 +118,9 @@ class GalleryController {
                 if (entry.isIntersecting) {
                     const item = entry.target;
                     const media = item.querySelector('video, img');
-                    const loadingIndicator = item.querySelector('.loading-indicator');
+                    const loadingIndicator = item.querySelector('.avant-loader');
+                    
+                    if (!media) return;
                     
                     if (media.tagName === 'VIDEO') {
                         this.loadVideo(media, loadingIndicator);
@@ -141,29 +141,36 @@ class GalleryController {
         const quality = video.dataset.quality || 'medium';
         const source = video.querySelector('source');
         
-        if (source) {
+        if (source && !source.src.includes(video.dataset.src)) {
             source.src = video.dataset.src;
             video.load();
-            
-            video.addEventListener('canplay', () => {
-                gsap.to(loadingIndicator, {
-                    opacity: 0,
-                    duration: 0.3,
-                    onComplete: () => {
-                        loadingIndicator.style.display = 'none';
-                        video.play();
-                    }
-                });
-            });
         }
+        
+        video.addEventListener('canplaythrough', () => {
+            gsap.to(loadingIndicator, {
+                opacity: 0,
+                duration: 0.3,
+                onComplete: () => {
+                    loadingIndicator.style.display = 'none';
+                    video.play().catch(err => console.log('Video playback error:', err));
+                }
+            });
+        }, { once: true });
+        
+        video.addEventListener('error', () => {
+            console.error(`Video failed to load: ${video.dataset.src}`);
+            loadingIndicator.textContent = 'Video Failed to Load';
+        }, { once: true });
     }
     
     loadImage(img, loadingIndicator) {
+        const src = img.dataset.src.includes('/.netlify/images') 
+            ? img.dataset.src 
+            : `/.netlify/images?url=/assets/images/${img.dataset.src.split('/').pop()}&w=800&q=75`;
         const newImg = new Image();
         
         newImg.onload = () => {
-            img.src = img.dataset.src;
-            
+            img.src = src;
             gsap.to(loadingIndicator, {
                 opacity: 0,
                 duration: 0.3,
@@ -173,7 +180,12 @@ class GalleryController {
             });
         };
         
-        newImg.src = img.dataset.src;
+        newImg.onerror = () => {
+            console.error(`Image failed to load: ${src}`);
+            loadingIndicator.textContent = 'Image Failed to Load';
+        };
+        
+        newImg.src = src;
     }
 }
 
