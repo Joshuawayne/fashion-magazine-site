@@ -1,0 +1,15 @@
+Please replace these images with your actual fashion photography:
+
+1. gallery1.jpg - Urban fashion shot
+2. gallery2.jpg - Classic portrait
+3. gallery3.jpg - Minimalist fashion
+4. gallery4.jpg - Avant-garde piece
+5. gallery5.jpg - Ethereal fashion shot
+6. gallery6.jpg - Bold fashion statement
+7. favicon.png - Site icon
+
+For best results:
+- Images should be high resolution (minimum 1200x800px)
+- Use .jpg format for photos
+- Use .png format for favicon (32x32px)
+- Maintain consistent aspect ratios

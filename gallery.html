@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVANT - Visual Narratives</title>
+    
+    <!-- Core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="gallery-page">
+    <!-- Cinematic Preloader -->
+    <div class="avant-preloader">
+        <div class="loader-content">
+            <span class="loader-text">AVANT</span>
+            <div class="avant-progress"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="#">AVANT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--  Hero Section -->
+    <section class="avant-hero">
+        <div class="hero-media">
+            <video id="heroVideo" autoplay muted loop playsinline data-quality="high">
+                <source src="assets/videos/stillmodel2.mp4" type="video/mp4">
+            </video>
+            <div class="avant-gradient"></div>
+        </div>
+        <div class="avant-hero-content">
+            <h1 class="avant-title">
+                <span class="title-line" data-aos="fade-up">Visual</span>
+                <span class="title-line" data-aos="fade-up" data-aos-delay="200">Narratives</span>
+            </h1>
+            <div class="avant-scroll-indicator" data-aos="fade-up" data-aos-delay="400">
+                <span class="scroll-text">Scroll to Explore</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Filter Navigation -->
+    <nav class="avant-filter">
+        <div class="filter-container" data-aos="fade-up">
+            <div class="avant-filter-group">
+                <button class="avant-filter-btn active" data-filter="all">
+                    <span class="btn-text">All Works</span>
+                    <span class="btn-count">12</span>
+                </button>
+                <button class="avant-filter-btn" data-filter="campaign">
+                    <span class="btn-text">Campaign</span>
+                    <span class="btn-count">3</span>
+                </button>
+                <button class="avant-filter-btn" data-filter="editorial">
+                    <span class="btn-text">Editorial</span>
+                    <span class="btn-count">5</span>
+                </button>
+                <button class="avant-filter-btn" data-filter="motion">
+                    <span class="btn-text">Motion</span>
+                    <span class="btn-count">4</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!--  Gallery Grid -->
+    <main class="avant-gallery">
+        <div class="avant-gallery-grid">
+            <!-- Featured Campaign -->
+            <article class="avant-item campaign featured" data-aos="fade-up">
+                <div class="avant-media">
+                    <video data-src="assets/videos/runwaymodel.mp4" muted loop playsinline data-quality="high">
+                        <source type="video/mp4">
+                    </video>
+                    <div class="avant-overlay"></div>
+                    <div class="avant-loader">
+                        <div class="avant-spinner"></div>
+                    </div>
+                </div>
+                <div class="avant-content">
+                    <span class="avant-category">Campaign Collection</span>
+                    <h2 class="avant-title">Runway Evolution</h2>
+                    <p class="avant-description">A bold step into the future of fashion</p>
+                </div>
+            </article>
+
+            <!-- Editorial Series -->
+            <article class="avant-item editorial featured" data-aos="fade-up">
+                <div class="avant-media">
+                    <img data-src="assets/images/beautifulred.jpg" alt="Rouge Editorial - High Fashion Portrait" loading="lazy">
+                    <div class="avant-overlay"></div>
+                    <div class="avant-loader">
+                        <div class="avant-spinner"></div>
+                    </div>
+                </div>
+                <div class="avant-content">
+                    <span class="avant-category">Editorial Series</span>
+                    <h2 class="avant-title">Rouge Essence</h2>
+                    <p class="avant-description">A bold celebration of color and form in contemporary fashion</p>
+                </div>
+            </article>
+
+            <article class="avant-item editorial" data-aos="fade-up">
+                <div class="avant-media">
+                    <img data-src="assets/images/africanwoman.jpg" alt="African Beauty Editorial" loading="lazy">
+                    <div class="avant-overlay"></div>
+                    <div class="avant-loader">
+                        <div class="avant-spinner"></div>
+                    </div>
+                </div>
+                <div class="avant-content">
+                    <span class="avant-category">Editorial Series</span>
+                    <h2 class="avant-title">African Queen</h2>
+                    <p class="avant-description">Celebrating the regal beauty of African fashion</p>
+                </div>
+            </article>
+
+            <article class="avant-item editorial" data-aos="fade-up">
+                <div class="avant-media">
+                    <img data-src="assets/images/culture.jpg" alt="Cultural Fashion Editorial" loading="lazy">
+                    <div class="avant-overlay"></div>
+                    <div class="avant-loader">
+                        <div class="avant-spinner"></div>
+                    </div>
+                </div>
+                <div class="avant-content">
+                    <span class="avant-category">Editorial Series</span>
+                    <h2 class="avant-title">Cultural Fusion</h2>
+                    <p class="avant-description">Where tradition meets contemporary style</p>
+                </div>
+            </article>
+
+            <article class="avant-item editorial" data-aos="fade-up">
+                <div class="avant-media">
+                    <img data-src="assets/images/mirror.jpg" alt="Mirror Fashion Editorial" loading="lazy">
+                    <div class="avant-overlay"></div>
+                    <div class="avant-loader">
+                        <div class="avant-spinner"></div>
+                    </div>
+                </div>
+                <div class="avant-content">
+                    <span class="avant-category">Editorial Series</span>
+                    <h2 class="avant-title">Reflections</h2>
+                    <p class="avant-description">A study in light, shadow, and style</p>
+                </div>
+            </article>
+
+            <article class="avant-item editorial" data-aos="fade-up">
+                <div class="avant-media">
+                    <img data-src="assets/images/standbyme.jpg" alt="Couple Fashion Editorial" loading="lazy">
+                    <div class="avant-overlay"></div>
+                    <div class="avant-loader">
+                        <div class="avant-spinner"></div>
+                    </div>
+                </div>
+                <div class="avant-content">
+                    <span class="avant-category">Editorial Series</span>
+                    <h2 class="avant-title">Stand By Me</h2>
+                    <p class="avant-description">Love and fashion in perfect harmony</p>
+                </div>
+            </article>
+
+            <!-- Motion Art -->
+            <article class="avant-item motion" data-aos="fade-up">
+                <div class="avant-media">
+                    <video data-src="assets/videos/butterfly.mp4" muted loop playsinline data-quality="medium">
+                        <source type="video/mp4">
+                    </video>
+                    <div class="avant-overlay"></div>
+                    <div class="avant-loader">
+                        <div class="avant-spinner"></div>
+                    </div>
+                </div>
+                <div class="avant-content">
+                    <span class="avant-category">Motion Art</span>
+                    <h2 class="avant-title">Metamorphosis</h2>
+                    <p class="avant-description">The evolution of style</p>
+                </div>
+            </article>
+
+            <!-- Campaign Items -->
+            <article class="avant-item campaign" data-aos="fade-up">
+                <div class="avant-media">
+                    <video data-src="assets/videos/runwaymodel2.mp4" muted loop playsinline data-quality="medium">
+                        <source type="video/mp4">
+                    </video>
+                    <div class="avant-overlay"></div>
+                    <div class="avant-loader">
+                        <div class="avant-spinner"></div>
+                    </div>
+                </div>
+                <div class="avant-content">
+                    <span class="avant-category">Campaign Collection</span>
+                    <h2 class="avant-title">Urban Elegance</h2>
+                    <p class="avant-description">A fusion of style and sophistication</p>
+                </div>
+            </article>
+
+            <article class="avant-item campaign" data-aos="fade-up">
+                <div class="avant-media">
+                    <video data-src="assets/videos/stillmodel.mp4" muted loop playsinline data-quality="medium">
+                        <source type="video/mp4">
+                    </video>
+                    <div class="avant-overlay"></div>
+                    <div class="avant-loader">
+                        <div class="avant-spinner"></div>
+                    </div>
+                </div>
+                <div class="avant-content">
+                    <span class="avant-category">Campaign Collection</span>
+                    <h2 class="avant-title">Timeless Grace</h2>
+                    <p class="avant-description">Elegance that transcends time</p>
+                </div>
+            </article>
+
+            <!-- Motion Items -->
+            <article class="avant-item motion" data-aos="fade-up">
+                <div class="avant-media">
+                    <video data-src="assets/videos/clock.mp4" muted loop playsinline data-quality="medium">
+                        <source type="video/mp4">
+                    </video>
+                    <div class="avant-overlay"></div>
+                    <div class="avant-loader">
+                        <div class="avant-spinner"></div>
+                    </div>
+                </div>
+                <div class="avant-content">
+                    <span class="avant-category">Motion Art</span>
+                    <h2 class="avant-title">Time & Style</h2>
+                    <p class="avant-description">A fusion of time and style</p>
+                </div>
+            </article>
+
+            <article class="avant-item motion" data-aos="fade-up">
+                <div class="avant-media">
+                    <video data-src="assets/videos/fruit.mp4" muted loop playsinline data-quality="medium">
+                        <source type="video/mp4">
+                    </video>
+                    <div class="avant-overlay"></div>
+                    <div class="avant-loader">
+                        <div class="avant-spinner"></div>
+                    </div>
+                </div>
+                <div class="avant-content">
+                    <span class="avant-category">Motion Art</span>
+                    <h2 class="avant-title">Sweet Aesthetics</h2>
+                    <p class="avant-description">A celebration of sweet and style</p>
+                </div>
+            </article>
+
+            <article class="avant-item motion" data-aos="fade-up">
+                <div class="avant-media">
+                    <video data-src="assets/videos/blur.mp4" muted loop playsinline data-quality="medium">
+                        <source type="video/mp4">
+                    </video>
+                    <div class="avant-overlay"></div>
+                    <div class="avant-loader">
+                        <div class="avant-spinner"></div>
+                    </div>
+                </div>
+                <div class="avant-content">
+                    <span class="avant-category">Motion Art</span>
+                    <h2 class="avant-title">Abstract Beauty</h2>
+                    <p class="avant-description">A celebration of abstract beauty</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-brand">
+                            <h3 class="brand-name">AVANT</h3>
+                            <p class="brand-desc">.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="footer-links">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="about.html">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="footer-connect">
+                            <h4>Stay Connected</h4>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="year"></span> AVANT. Created by <a href="#">Kikoi Technology</a></p>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    var yearSpan = document.getElementById("year");
+                    var currentYear = new Date().getFullYear();
+                    yearSpan.textContent = currentYear;
+                });
+            </script>
+    </footer>
+    <!-- Core Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

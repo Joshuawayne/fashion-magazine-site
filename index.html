@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVANT | Fashion Magazine</title>
+     <meta name="description" content="A fashion magazine site for those who love art and Fashion." />
+     <meta name="keywords" content="gsap, fashion, , design, web development, art, gsap, animation" />
+	<meta name="author" content="Kikoi Technology" />
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">AVANT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="video-container">
+        <video autoplay muted loop id="heroVideo" playsinline>
+            <source src="assets/videos/hero.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+    </div>
+    
+    <div class="light-cursor"></div>
+    
+    <div class="floating-elements">
+        <span class="dot"></span>
+        <span class="circle"></span>
+        <span class="square"></span>
+    </div>
+
+    <div class="hero-content" data-aos="fade-up">
+        <h1>
+            <span class="letter-animate">A</span>
+            <span class="letter-animate">V</span>
+            <span class="letter-animate">A</span>
+            <span class="letter-animate">N</span>
+            <span class="letter-animate">T</span>
+        </h1>
+        <p>Fashion Meets Art</p>
+        <div class="artistic-line" data-aos="fade-in" data-aos-delay="500"></div>
+    </div>
+</section>
+
+
+    <!-- Intro Text Section -->
+    <section class="intro-text">
+        <div class="container">
+            <h2 class="display-text" data-aos="fade-up">Fashion Forward</h2>
+            <div class="scrolling-text">
+                <span>DESIGN • ELEGANCE • INNOVATION • STYLE</span>
+            </div>
+        </div>
+    </section>
+<!-- Brand Partnership Section -->
+<section class="brand-showcase">
+    <div class="container">
+        <div class="brand-grid" data-aos="fade-up">
+            <div class="brand-item">
+                <i class="fab fa-cc-visa"></i>
+            </div>
+            <div class="brand-item">
+                <i class="fab fa-apple"></i>
+            </div>
+            <div class="brand-item">
+                <i class="fab fa-amazon"></i>
+            </div>
+            <div class="brand-item">
+                <i class="fab fa-google"></i>
+            </div>
+            <div class="brand-item">
+                <i class="fab fa-spotify"></i>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Featured Section -->
+    <section class="magazine-grid">
+    <div class="magazine-grid__item--full">
+        <h2 class="text-center" data-aos="fade-up">Timeless Elegance</h2>
+		<div class="artistic-line" data-aos="fade-up"></div>
+        <p class="editorial-text text-center" data-aos="fade-up" data-aos-delay="200">
+            Where artistry meets luxury in every precious detail
+        </p>
+    </div>
+    
+    <div class="magazine-grid__item hover-shine" data-aos="fade-up">
+        <img src="assets/images/fashion1.jpg" alt="Jewelry Collection 1" class="img-fluid">
+        <div class="item-caption">Ethereal Gold</div>
+    </div>
+    <div class="magazine-grid__item--large hover-shine" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/images/fashion2.jpg" alt="Jewelry Collection 2" class="img-fluid">
+        <div class="item-caption">Royal Gems</div>
+    </div>
+    <div class="magazine-grid__item hover-shine" data-aos="fade-up" data-aos-delay="400">
+        <img src="assets/images/fashion3.jpg" alt="Jewelry Collection 3" class="img-fluid">
+        <div class="item-caption">Pearl Dreams</div>
+    </div>
+</section>
+
+    <!-- Quote Section -->
+    <section class="quote-section parallax">
+        <div class="quote-content" data-aos="fade">
+            <blockquote>
+                "Style is a way to say who you are without having to speak"
+            </blockquote>
+            <cite>— Rachel Zoe</cite>
+        </div>
+    </section>
+
+<!-- Gallery Preview -->
+<section class="trends-preview">
+    <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">One With Nature</h2>
+        <div class="trends-grid">
+            <div class="trend-item hover-effect" data-aos="fade-up">
+                <img src="assets/images/preview1.jpg" alt="Preview 1" class="img-fluid">
+                <div class="trend-overlay">
+                    <h3>Summer Collection</h3>
+                    <a href="gallery.html" class="trend-link">Explore</a>
+                </div>
+            </div>
+            <div class="trend-item hover-effect" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/images/preview2.jpg" alt="Preview 2" class="img-fluid">
+                <div class="trend-overlay">
+                    <h3>Autumn Vibes</h3>
+                    <a href="gallery.html" class="trend-link">Explore</a>
+                </div>
+            </div>
+            <div class="trend-item hover-effect" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/images/preview3.jpg" alt="Preview 3" class="img-fluid">
+                <div class="trend-overlay">
+                    <h3>Street Style</h3>
+                    <a href="gallery.html" class="trend-link">Explore</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Newsletter Section -->
+<section class="newsletter-cute">
+    <div class="container">
+        <div class="newsletter-content" data-aos="fade-up">
+            <h3>Stay AVANT</h3>
+            <p>Subscribe to our newsletter for the latest fashion updates</p>
+            <form class="signup-form">
+                <div class="input-group">
+                    <input type="email" placeholder="✉️ Enter your email" required>
+                    <button type="submit" class="btn-subscribe">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="floating-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</section>
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-brand">
+                            <h3 class="brand-name">AVANT</h3>
+                            <p class="brand-desc">.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="footer-links">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="about.html">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="footer-connect">
+                            <h4>Stay Connected</h4>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="year"></span> AVANT. Created by <a href="#">Kikoi Technology</a></p>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    var yearSpan = document.getElementById("year");
+                    var currentYear = new Date().getFullYear();
+                    yearSpan.textContent = currentYear;
+                });
+            </script>
+    </footer>
+
+    <!-- Core Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>

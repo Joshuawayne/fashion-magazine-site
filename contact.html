@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | AVANT Magazine</title>
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="contact-page">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">AVANT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="hero-section contact-hero">
+        <div class="hero-grid">
+            <div class="hero-text" data-aos="fade-up">
+                <span class="hero-eyebrow">Contact Us</span>
+                <h1>Create<br>With<br>Us</h1>
+            </div>
+            <div class="hero-video-container">
+                <div class="video-wrapper">
+                    <video autoplay muted loop playsinline>
+                        <source src="assets/videos/contact.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay"></div>
+                </div>
+                <div class="artistic-text" data-aos="fade-left" data-aos-delay="300">
+                    <span class="vertical-text">AVANT 2024</span>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <span>Scroll</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Information -->
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="contact-info">
+                        <span class="section-tag">Get in Touch</span>
+                        <h2>Where Fashion Meets Vision</h2>
+                        <p class="editorial-text">We're always looking for new collaborations, stories, and perspectives. Reach out to us and become part of the AVANT narrative.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h3>Visit Us</h3>
+                                    <p>Fashion District<br>westlands, Wst 10018</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3>Email Us</h3>
+                                    <p>editorial@avant.mag<br>press@avant.mag</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h3>Call Us</h3>
+                                    <p>+254 (792) 92-1969<br>Mon - Fri, 9am - 6pm </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Pinterest">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="name" required>
+                                <label for="name">Full Name</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="email" class="form-control" id="email" required>
+                                <label for="email">Email Address</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <select class="form-control" id="inquiry" required>
+                                    <option value="" selected disabled></option>
+                                    <option value="editorial">Editorial Submission</option>
+                                    <option value="advertising">Advertising Inquiry</option>
+                                    <option value="collaboration">Collaboration Proposal</option>
+                                    <option value="press">Press Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <label for="inquiry">Type of Inquiry</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Talk To Us</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.364248327433!2d36.83779143052054!3d-1.2924093041486275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10b2d8bfc6f7%3A0xc660d7e7689d5a62!2sNairobi%20Wetlands%2C%20Nairobi%20County!5e0!3m2!1sen!2ske!4v1641985765705!5m2!1sen!2ske" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+            <div class="map-overlay"></div>
+        </div>
+    </section>
+
+
+    <!-- Core Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Initialize GSAP ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+        // Form validation and animation
+        const form = document.getElementById('contactForm');
+        const formInputs = document.querySelectorAll('.form-control');
+
+        // Add validation message elements
+        formInputs.forEach(input => {
+            const validationMessage = document.createElement('div');
+            validationMessage.className = 'validation-message';
+            input.parentElement.appendChild(validationMessage);
+        });
+
+        // Input focus animations
+        formInputs.forEach(input => {
+            const inputGroup = input.parentElement;
+
+            // Focus events
+            input.addEventListener('focus', () => {
+                inputGroup.classList.add('focused');
+                gsap.to(input, {
+                    duration: 0.6,
+                    ease: "power2.out",
+                    y: 0
+                });
+            });
+
+            // Blur events
+            input.addEventListener('blur', () => {
+                if (!input.value) {
+                    inputGroup.classList.remove('focused');
+                }
+                validateInput(input);
+            });
+
+            // Input events
+            input.addEventListener('input', () => {
+                validateInput(input);
+            });
+
+            // Initialize if has value
+            if (input.value) {
+                inputGroup.classList.add('focused');
+            }
+        });
+
+        // Validate individual input
+        function validateInput(input) {
+            const inputGroup = input.parentElement;
+            const validationMessage = inputGroup.querySelector('.validation-message');
+
+            // Reset classes
+            inputGroup.classList.remove('error', 'success');
+            validationMessage.classList.remove('error', 'success');
+
+            if (input.value) {
+                if (input.checkValidity()) {
+                    inputGroup.classList.add('success');
+                    validationMessage.classList.add('success');
+                    validationMessage.textContent = 'Looks good!';
+                } else {
+                    inputGroup.classList.add('error');
+                    validationMessage.classList.add('error');
+                    validationMessage.textContent = getValidationMessage(input);
+                }
+            }
+        }
+
+        // Get appropriate validation message
+        function getValidationMessage(input) {
+            if (input.type === 'email' && !input.value.includes('@')) {
+                return 'Please enter a valid email address';
+            }
+            if (input.id === 'name' && input.value.length < 2) {
+                return 'Name must be at least 2 characters';
+            }
+            if (input.id === 'message' && input.value.length < 10) {
+                return 'Message must be at least 10 characters';
+            }
+            return 'This field is required';
+        }
+
+        // Form submission
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            // Validate all inputs
+            let isValid = true;
+            formInputs.forEach(input => {
+                validateInput(input);
+                if (!input.checkValidity()) {
+                    isValid = false;
+                }
+            });
+
+            if (isValid) {
+                const submitBtn = form.querySelector('.btn');
+                const originalText = submitBtn.innerHTML;
+
+                // Animate button
+                submitBtn.innerHTML = '<span>Sending...</span>';
+                submitBtn.disabled = true;
+
+                try {
+                    // Simulate API call
+                    await new Promise(resolve => setTimeout(resolve, 1500));
+
+                    // Success animation
+                    gsap.to(form, {
+                        duration: 0.6,
+                        opacity: 0.5,
+                        scale: 0.95,
+                        ease: "power2.out"
+                    });
+
+                    setTimeout(() => {
+                        form.reset();
+                        formInputs.forEach(input => {
+                            input.parentElement.classList.remove('focused', 'success');
+                        });
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+
+                        gsap.to(form, {
+                            duration: 0.6,
+                            opacity: 1,
+                            scale: 1,
+                            ease: "power2.out"
+                        });
+                    }, 1500);
+
+                } catch (error) {
+                    console.error('Form submission error:', error);
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }
+            }
+        });
+    </script>
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-brand">
+                            <h3 class="brand-name">AVANT</h3>
+                            <p class="brand-desc">.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="footer-links">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="about.html">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="footer-connect">
+                            <h4>Stay Connected</h4>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="year"></span> AVANT. Created by <a href="#">Kikoi Technology</a></p>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    var yearSpan = document.getElementById("year");
+                    var currentYear = new Date().getFullYear();
+                    yearSpan.textContent = currentYear;
+                });
+            </script>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+.image-container {
+    position: relative;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.image-container.loading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        transparent 100%
+    );
+    animation: loading-shimmer 1.5s infinite;
+}
+
+.image-container img {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-container img.loaded {
+    opacity: 1;
+}
+
+.image-container .error-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.image-container.error .error-overlay {
+    display: flex;
+}
+
+@keyframes loading-shimmer {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Blur-up effect for lazy loaded images */
+.image-container .blur-load {
+    filter: blur(20px);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.image-container .blur-load.loaded {
+    filter: blur(0);
+    transform: scale(1);
+}

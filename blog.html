@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | AVANT Magazine</title>
+    
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="blog-page">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">AVANT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <div class="video-container">
+            <video autoplay muted loop playsinline>
+                <source src="assets/videos/blog.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+        </div>
+           <div class="hero-content" data-aos="fade-up">
+        <h1>
+            <span class="letter-animate">T</span>
+            <span class="letter-animate">E</span>
+            <span class="letter-animate">A</span>
+        </h1>
+		<p>We have it for you</p>
+            <div class="artistic-line" data-aos="fade-up" data-aos-delay="200"></div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="featured-post">
+        <div class="container">
+            <article class="magazine-grid">
+                <div class="magazine-grid__item--full" data-aos="fade-up">
+                    <div class="featured-post-content">
+                        <span class="post-category">Featured</span>
+                        <h2>The Evolution of Sustainable Fashion</h2>
+                        <p class="editorial-text">Exploring how sustainable practices are reshaping the future of fashion industry.</p>
+                        <div class="post-meta">
+                            <span class="date">June 15, 2024</span>
+                            <span class="author">By Sarah Chen</span>
+                        </div>
+                        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <img src="assets/images/blog-featured.jpg" alt="Sustainable Fashion" class="img-fluid">
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-grid">
+        <div class="container">
+            <div class="row">
+                <!-- Article 1 -->
+                <article class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="assets/images/blog1.jpg" alt="Fashion Week Highlights">
+                        </div>
+                        <div class="blog-card-content">
+                            <span class="post-category">Fashion Week</span>
+                            <h3>Paris Fashion Week Highlights</h3>
+                            <p>A curated look at the most memorable moments from this year's shows.</p>
+                            <div class="post-meta">
+                                <span class="date">June 10, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="assets/images/blog2.jpg" alt="Street Style Trends">
+                        </div>
+                        <div class="blog-card-content">
+                            <span class="post-category">Street Style</span>
+                            <h3>Street Style Trends 2024</h3>
+                            <p>How urban fashion is evolving in the post-pandemic era.</p>
+                            <div class="post-meta">
+                                <span class="date">June 8, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="assets/images/blog3.jpg" alt="Designer Interview">
+                        </div>
+                        <div class="blog-card-content">
+                            <span class="post-category">Interview</span>
+                            <h3>In Conversation with Emerging Designers</h3>
+                            <p>Meet the new wave of fashion innovators shaping the industry.</p>
+                            <div class="post-meta">
+                                <span class="date">June 5, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-brand">
+                            <h3 class="brand-name">AVANT</h3>
+                            <p class="brand-desc">.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="footer-links">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="about.html">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="footer-connect">
+                            <h4>Stay Connected</h4>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="year"></span> AVANT. Created by <a href="#">Kikoi Technology</a></p>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    var yearSpan = document.getElementById("year");
+                    var currentYear = new Date().getFullYear();
+                    yearSpan.textContent = currentYear;
+                });
+            </script>
+    </footer>
+    <!-- Core Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
